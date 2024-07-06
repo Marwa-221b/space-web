@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 3000px;
+}
+header nav{
+    background-color: rgba(97, 75, 75, 0.3);
+
+}
+header nav .himg{
+    margin-left: 150px;
+
+}
+header .list li{
+    margin-left: 80px;
+font-family:cursive;
+font-size: 20px;
+}
+
+.divdrop a{
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.f1 button{
+    margin-left: 20px;
+}
+.f1 button:hover{
+    background-color: rgba(115, 115, 223, 0.5);
+}
+.present{
+    height: 250px;
+}
+.sec2{
+    background-color: #b7c2c2;
+}
+.accd .acc h2{
+    font-family:fantasy;
+      color: rgb(53, 38, 66);
+}
+.restofsec{
+    background:  rgba(85, 85, 133, 0.5);
+    padding-left: 10px;
+}
+.sec4{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/ho10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.head5{
+    /* background-image: linear-gradient( #081448,#1a2c80,#282157,#4a478a); */
+    background-image: linear-gradient( #054569,#5591a9,#9ccddc,#ced7e0,rgb(167, 162, 162));
+
+    
+}
+.cont5{
+    margin-top: -10px;
+    /* background-image: linear-gradient( #054569,#5591a9,#9ccddc,#ced7e0); */
+    /* background-image: linear-gradient( rgba(206, 215, 224,1),rgb(156,205,220,1),	
+    rgb(85,145,169,1)rgb(5,69,105,1)); */
+
+}
+.sec5 p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cb::before, ::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    opacity: 0;
+    background-color:rgba(182, 199, 193, 0.5);
+
+}
+.cb::after{
+    right: 0%;
+    bottom: 0%;
+}
+.cb::before{
+    left: 0%;
+    top: 0%;
+}
+.cb:hover::before, .cb:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.sec6{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/ho9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.headd7,.head8{
+        background-image: linear-gradient(to bottom right,#e9e8ee,#b4b1b8,#6f6d72,#ced7e0);
+
+}
+.cont7{
+    margin-top: -10px;
+    padding: 30px;
+}
+
+.imov{
+margin-right: 8px;
+border: 2px black solid;
+}
+.cont7 .card:hover,.cont7 .card:hover.ov{
+    transform: scale(0.9);
+
+}
+.ov{
+    background-color: rgba(196, 196, 245, 0.5);
+    /* opacity: 0; */
+}
+.cont7 .card:hover.ov{
+    background-color: rgba(196, 196, 245, 0.5); 
+}
+
+.line{
+    margin-top: -8px;
+}
+.sec8,.sec9{
+    background-image: linear-gradient(to bottom right,#e9e8ee,#b4b1b8,#6f6d72,#ced7e0);
+
+}
+.fc:hover .line{
+    transform: scale(1.5);
+    transform-origin: left;
+    transition: 1s;
+}
+.fc{
+    overflow: hidden;
+}
+.fc:hover .img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.c1{
+    background-image: linear-gradient(to bottom right, #054569,#5591a9,#9ccddc,#ced7e0,rgb(167, 162, 162));
+
+}
+.c1 .iconin{
+    color: rgb(199, 5, 69);
+}
+.sec9{
+    margin-top: -48px;
+}
+.c1:hover{
+    border: 2px black solid;
+    transform: scale(1.1);
+}
+.line2{
+margin-left: 50px;
+margin-top: 12px;
+}
+.t2 a{
+    line-height: 30px;
+}
+.line3{
+    margin-left: 50px;
+margin-top: -60px;
+}
+
+@media(max-width:700px){
+ .cont5{
+    margin-top: -50px;
+ }
+.img {
+    
+   height: 250px;
+ }
+}

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Space</title>
+       <link rel="stylesheet" href="css/all.css">
+       <link rel="stylesheet" href="css/style.css">
+       <meta charset="UTF-8">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+       
+    </head>
+    <body>
+        <header> <!--the begining of header -->
+              <nav class="navbar navbar-expand-sm  fixed-top ">  <!--the begining of nav -->
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <a href="#" class="navbar-brand">
+                        <img src="images/logo.jpg" alt="photo" class="himg rounded" width="60px" height="60px">
+                    </a> <!--logo end-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-items">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"id="collapse-items"> <!--start of collapsing-->
+                       <ul class="list navbar-nav">
+                        <li class="nav-item" style="border-style: outset;">
+                            <a  class="nav-link text-light dropdown-toggle"href="#"  data-toggle="dropdown">Galaxies</a>
+                            <div class="divdrop dropdown-menu">
+                                <a href="#" class="dropdown-item text-secondary">Andromeda</a>
+                                <a href="#" class="dropdown-item text-secondary">Milky Way</a>
+                                <a href="#" class="dropdown-item text-secondary">Fireworks Galaxy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="border-style: outset;">
+                            <a  class="nav-link text-light dropdown-toggle"href="#" data-toggle="dropdown">Planets</a>
+                            <div class="divdrop dropdown-menu">
+                                <a href="#" class="dropdown-item text-secondary">Mercury</a>
+                                <a href="#" class="dropdown-item text-secondary">Venus</a>
+                                <a href="#" class="dropdown-item text-secondary">Earth</a>
+                                <a href="#" class="dropdown-item text-secondary">Mars</a>
+                                <a href="#" class="dropdown-item text-secondary">Jupiter</a>
+                                <a href="#" class="dropdown-item text-secondary">Saturn</a>
+                                <a href="#" class="dropdown-item text-secondary">Uranus</a>
+                                <a href="#" class="dropdown-item text-secondary">Neptune</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item"style="border-style: outset;">
+                            <a  class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">Stars</a>
+                            <div class="divdrop dropdown-menu">
+                                <a href="#" class="dropdown-item text-secondary">Sirius</a>
+                                <a href="#" class="dropdown-item text-secondary">Betelgeuse</a>
+                                <a href="#" class="dropdown-item text-secondary">Vega</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <form class="f1 d-flex" action="/action_page.php">
+                                <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                                <button class="btn btn-light " type="Submit" >Search</button>
+                                <button class="btn btn-light" type="button" data-toggle="modal" data-target="#mmodal"> Login</button>
+                            </form>
+                        </li>
+                       </ul>
+                    </div> <!--collapsing end-->
+                </div> <!--container end-->
+              </nav><!--the end of nav -->
+              <div class="modal"id="mmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-secondary d-flex justify-content-between">
+                            <h4 class="modal-title ">Login</h4>
+                            <button type="button" class="btn btn-lg"data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                              <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email" style="font-family: Georgia, 'Times New Roman', Times, serif;">Email Adress</label>
+                                    <input type="email" class="form-control" placeholder="Email Adress" id="email">
+                                      <span>Donot worry about your info</span>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="pwd"  style="font-family: Georgia, 'Times New Roman', Times, serif;">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" id="pwd">
+                                </div>
+                                <div class="form-check form-group p-0">
+                                    <input  type="radio" class="in1 custom-control-input  "  class="form-check-label" id="customRadio1">
+                                    <label class=" form-check-label custom-control-label "for="customRadio1">Remember me
+                                    </label>
+
+
+                                </div>
+                              </form>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="submit" class="btn2 btn btn-secondary">Login</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    </div> <!--end of modal content-->
+                </div><!--end of modal dialog-->
+              </div><!--end of modal -->
+        </header> <!--the end of header -->
+<main> <!--start of main -->
+    <div class="position-relative">
+        <div id="car" class="carousel slide" data-bs-ride="carousel">
+            <!-- indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#car" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#car" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#car" data-bs-slide-to="3"></button>
+            </div>
+      
+            <!-- slideshow -->
+            <div class=" carousel-inner">
+              <div class=" carousel-item active" >
+                  <img src="images/8.jpg"  style="width:100%;height:100vh" alt="space" class="d-block" >
+                  <div class="carousel-caption"style="border-style:dashed ;border-color: azure;">
+                      <h3>Time </h3>
+                      <p style="font-family:monospace">It is more than menu path </p>
+                      <button class="btn  btn-light">Show more</button>
+                  </div>
+              </div>
+              <div class=" carousel-item">
+                  <img src="images/11.jpg" alt="time" style="width:100%;height:100vh" class="d-block">
+                  <div class="carousel-caption"style="border-style:dashed ;border-color: azure;">
+                      <h3>Space </h3>
+                      <p style="font-family:monospace">It is enndless possibilty from the one you know</p>
+                      <button class="btn  btn-light">Show more</button>
+      
+                  </div>
+              </div>
+              <div class=" carousel-item">
+                  <img src="images/12.jpg" alt="reality" style="width:100%;height:100vh" class="d-block">
+                  <div class="carousel-caption"style="border-style:dashed ;border-color: azure;">
+                      <h3>reality</h3>
+                      <p style="font-family:monospace">Iam your guide in this world </p>
+                      <button class="btn btn-light">Show more</button>
+      
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="images/space-back.jpg" alt="space" style="width:100%;height:100vh" class="d-block">
+                  <div class="carousel-caption"style="border-style:dashed ;border-color: azure;">
+                      <h3>Stars </h3>
+                      <p style="font-family:monospace"> A map to our way</p>
+                      <button class="btn  btn-light">Show more</button>
+      
+                  </div>
+              </div>
+            </div>
+            <!-- left and right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div><!--end of carousel div-->
+    </div>
+  <!-- start of icons div -->
+  <div class="position-fixed z-1 end-0 bottom-0 top-8 mb-0 me-3 pb-0 ">
+    <ul>
+        <li class="list-group-item my-5 rounded"> <a class="icon btn btn-hover bg-white" href="#" style="font-size: 30px;"><i class="fa-brands fa-facebook"></i></a> </li>
+        <li class="list-group-item my-5 rounded"><a  class="icon btn btn-hover bg-white" href="#"  style="font-size: 30px;"><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="list-group-item my-5 rounded"><a  class="icon btn btn-hover bg-white" href="#"  style="font-size: 30px;"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="list-group-item my-5 rounded"><a  class="icon btn btn-hover bg-white" href="#"  style="font-size: 30px;"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </div><!--end of icons div-->
+</main><!--end of main -->
+<section class="sec1"> <!--start of the first sec-->
+    <div class="present  bg-secondary container-fluid " >
+         <h1 class=" text-center pt-4">welcome to our new world</h1>
+          <div class="pr ">
+            <p class=" text-light">
+                Space, also known as outer space, is the area directly outside of Earth's atmosphere. 
+                Space technically begins at the Kármán Line, which is about 100 km or 62 miles above the Earth.
+                Unlike Earth, there is no air in space,which is why astronauts have to wear high-tech 
+                spacesuits to travel there.
+            </p>
+
+          </div>
+        
+            <button class="btn btn-light btn-hover">Learn More</button>
+    </div>
+</section> <!--end of first sec-->
+     <section class="sec2">
+        <hr>
+        <div class="content-2 ">
+            <h1 class="text-center">Our Content</h1>
+        </div>
+        <div class="accd accordion accordion-flush" id="accordionExample">
+            <div class="acc accordion-item " >
+                <h2 class="accordion-header " id="head1">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"data-bs-target="#collapse1"
+                   aria-expanded="false" aria-controls="collapse1" >
+                   constellations
+                   </button>
+                </h2>
+                <div class="accordion-collapse collapse " aria-labelledby="head1" id="collapse1" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    a group of stars that looks like a particular shape in the sky and has been given a name. 
+                    These stars are far away from Earth. They are not connected to each other at all. 
+                    Some stars in a constellation might be close while others are very far away
+                  </div>
+                </div>
+            </div>
+            <div class="acc accordion-item ">
+                <h2 class=" accordion-header" id="head2">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"data-bs-target="#collapse2"
+                   aria-expanded="false" aria-controls="collapse2" >
+                   Moons
+                   </button>
+                </h2>
+                <div class="accordion-collapse collapse " aria-labelledby="head2" id="collapse2" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Naturally-formed bodies that orbit planets are called moons, or planetary satellites. 
+                    The best-known planetary satellite is, of course, Earth's Moon. Since it was named before we learned about other planetary satellites, 
+                    it is called simply “Moon.”
+                  </div>
+                </div>
+            </div>
+            <div class="acc accordion-item ">
+                <h2 class="accordion-header" id="head3">
+                   <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"data-bs-target="#collapse3"
+                   aria-expanded="false" aria-controls="collapse3" >
+                   Planets
+                   </button>
+                </h2>
+                <div class="accordion-collapse collapse " aria-labelledby="head3" id="collapse3" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, 
+                    and Neptune. There are five officially recognized dwarf planets in our solar system: 
+                    Ceres, Pluto, Haumea, Makemake, and Eris.
+                  </div>
+                </div>
+            </div> 
+        </div> <!--end of accordion sec-->
+     </section>  <!--end of sec2--> 
+     <section class="sec3"> <!--start of sec3-->
+        <div >
+            <div class="header-t text-center bg-secondary " style="font-size: 25px; color: azure;">
+                Translate from arabic to english
+            </div>
+            <div class="restofsec " style="font-size: 23px;">
+                <span class="text-dark"> To tanslate</span>
+                <span class="text-light ">Press Here</span>
+                <button class="but btn btn-hover d-block btn-secondary  mt-2">Copy</button>
+                <textarea name="" id="tran" cols="100" rows="3" class="rounded-3 mt-3 pl-5  col-sm-3 col-lg-6" placeholder="Enter text here"></textarea>
+            </div>
+        </div>
+        <hr>
+        <div class=" pt-1">
+            <div class="header-t text-center bg-secondary " style="font-size: 25px; color: azure;">
+                Translate from arabic to german
+            </div>
+            <div class="restofsec  " style="font-size: 23px;">
+                <span class="text-dark"> To tanslate</span>
+                <span class="text-light ">Press Here</span>
+                <button class="but btn btn-hover d-block btn-secondary  mt-2">Copy</button>
+                <textarea name="" id="tran" cols="100" rows="3" class="rounded-3 mt-3 pl-5 col-sm-6  " placeholder="Enter text here"></textarea>
+            </div>
+        </div>
+     </section><!--end of sec3-->
+     <section class="sec4"> <!--start of sec4-->
+           <div class="sec4">
+           </div>
+     </section><!--end of sec4-->
+     <section class="sec5"> <!--strat of sec5-->
+        <div class="head5 ">
+            <h1 class="text-center">Popular things in space</h1>
+        </div>
+        <div class="cont5 d-lg-flex  bg-secondary text-dark justify-content-between"> <!--start of card sec-->
+            <div class="cb card col-3 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/gabar.jpg" alt="con1" class="rounded-3">
+                <div class=" bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Orion</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during winter</p>
+                </div>
+            </div>
+            <div class="cb card col-3 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/con2.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Ursa</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during spring </p>
+                </div>
+            </div>
+            <div class="cb card col-3 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/con3.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">scorpio</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during summer</p>
+                </div>
+            </div>
+        </div><!--end of cad sec -->
+        <div class="cont5 d-lg-flex bg-secondary text-dark justify-content-between"> <!--start of card sec-->
+            <div class="cb card col-3 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/con4.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Leo</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during spring</p>
+                </div>
+            </div>
+            <div class="cb card col-3 m-5 rounded-3"style="width:250px; ">
+                <img src="images/con5.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">cancer</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during summer</p>
+                </div>
+            </div>
+            <div class="cb card col-3 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/con6.jpg" alt="con1" class="rounded-3" height="350px">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Draco</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" >set of stars visible during whole year</p>
+                </div>
+            </div>
+        </div><!--end of cad sec -->
+        <div class="cont5 d-lg-flex bg-secondary text-dark justify-content-around"> <!--start of card sec-->
+            <div class="cb card col-6 m-5 rounded-3"style="width: 250px; ">
+                <img src="images/con7.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Aries</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during spring</p>
+                </div>
+            </div>
+            <div class="cb card col-6 m-5 rounded-3"style="width:250px; ">
+                <img src="images/on8.jpg" alt="con1" class="rounded-3">
+                <div class="bodycard">
+                    <div class="part d-inline-flex p-2 ">
+                        <h4 class="card-title pl-5 ">Gemini</h4>
+                        <a href="#"><button class="btn btn-hover btn-secondary ms-4">Learn more</button></a>
+                    </div>
+                   <p class="card-text text-center text-secondary" style="font-size: 20px;">set of stars visible during winter</p>
+                </div>
+            </div>
+           
+        </div><!--end of cad sec -->
+     </section> <!--end of sec5-->
+     <section class="sec6"><!--start of sec6-->
+     </section><!--end of sec6-->
+     <section class="sec7" ><!--start of sec7-->
+          <div class="contain">
+            <div class="headd7">
+                <h1 class="head7 text-center">Thanks for your visit</h1>
+            </div>
+            <div class="cont7 d-lg-flex justify-content-around bg-secondary">
+                <div class="card  col-lg-3" style="width: 250px; ">
+                    <img src="images/per1.jpg" alt="Card image" class="card-img" style="width: 100%; height: 350px;" >
+                   <div class="ov card-img-overlay">
+                    <h4 class="card-title text-light" style="font-size: 15px;">All thanks appreciation</h4>
+                    <a href="#" class="text-light"><i class="fa-regular fa-clock "></i></a>
+                    <p class="card-text text-light d-inline-flex" style="font-size: 15px;">Octobar,15 2024</p>
+                    <p class="fst-italic text-light position-absolute bottom-0 mb-2" style="font-size: 20px;">Stevene Ali <br><small>Astranut in Nasa</small></p>
+                   </div>
+                   <img src="images/ers6.jpg" alt="person" style="width: 75px; height: 100px;" class="imov rounded-circle  bottom-0 end-0 mb-5 border-2  position-absolute">
+                </div>
+                <div class="card  col-lg-3" style="width: 250px; ">
+                    <img src="images/per2.jpg" alt="Card image" class="card-img" style="width: 100%; height: 350px;">
+                   <div class="ov card-img-overlay">
+                    <h4 class="card-title text-light" style="font-size: 15px;">All thanks appreciation</h4>
+                    <a href="#" class="text-light"><i class="fa-regular fa-clock "></i></a>
+                    <p class="card-text text-light d-inline-flex" style="font-size: 15px;">Octobar,15 2024</p>
+                    <p class="fst-italic text-light position-absolute bottom-0 mb-2" style="font-size: 20px;">Marwa Ali <br><small>Astranut in Nasa</small></p>
+                   </div>
+                   <img src="images/pers4.jpg" alt="person" style="width: 75px; height: 100px;" class="imov rounded-circle  bottom-0 end-0 mb-5 border-2  position-absolute">
+                </div>
+                <div class="card  col-lg-3" style="width: 250px; ">
+                    <img src="images/per3.jpg" alt="Card image" class="card-img" style="width: 100%;height: 350px;">
+                   <div class="ov card-img-overlay">
+                    <h4 class="card-title text-light" style="font-size: 15px;">All thanks appreciation</h4>
+                    <a href="#" class="text-light"><i class="fa-regular fa-clock "></i></a>
+                    <p class="card-text text-light d-inline-flex" style="font-size: 15px;">Octobar,15 2024</p>
+                    <p class="fst-italic text-light position-absolute bottom-0 mb-2" style="font-size: 20px;">Mohamed Ahmed <br><small>Astranut in Nasa</small></p>
+                   </div>
+                   <img src="images/pers5.jpg" alt="person" style="width: 75px; height: 100px;" class="imov rounded-circle  bottom-0 end-0 mb-5 border-2  position-absolute">
+                </div>
+            </div>
+
+          </div>
+     </section><!--end of sec7-->
+     <section class="sec8"> <!--start of sec8-->
+           <div class="head8 ">
+            <h1 class="text-center">Our news</h1>
+           </div>
+            <div class="fc card bg-dark m-5" style="box-shadow: 10px 10px 44px 7px rgba(177,178,179,1);">
+                <div class="row d-flex">
+                    <div class="img col-12 col-md-4">
+                    <img src="images/bbb.jpg" alt="c1" class="img-fluid " style="clip-path: ellipse(250px 150px at 10% 20%); ">
+    
+                    </div>
+                    <div class="cont19 col-12 col-md-8">
+                        <div class="card-body text-light">
+                            <h2 class="card-title ">Moons</h2>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="d-inline-flex">Mon,May 25th 2024</p>   
+                            <div class="line rounded " style="border-top: 2px solid white; width: 100px;"></div> 
+                            <p class="card-text">
+                                The Saturn system teems with natural satellites,
+                                 from planet-sized Titan to small oddballs,shaped like potatoes or ravioli. 
+                                 As of June 8, 2023, Saturn has 146 moons in its orbit. 
+                                The moons range in size from larger than the planet Mercury – 
+                                the giant moon Titan – to as small as a sports arena.
+                            </p>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-tag me-2"></i>Products</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-regular fa-clock  me-2"></i>55 Minutes</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-play  me-2"></i>Play</a>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+                
+            </div> <!--end of card sec-->
+            <div class="fc card bg-dark m-5">
+                <div class="row d-flex">
+                    <div class="cont19 col-12 col-md-8">
+                        <div class="card-body text-light">
+                            <h2 class="card-title ">Asteroid</h2>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="d-inline-flex">Mon,May 26th 2024</p>   
+                            <div class="line rounded " style="border-top: 2px solid white; width: 100px;"></div> 
+                            <p class="card-text">
+                                Most asteroids can be found orbiting the Sun between Mars and Jupiter within the main asteroid 
+                                belt. Asteroids range in size from Vesta – the largest at about 329 miles (530 kilometers) 
+                                in diameter – to bodies that are less than 33 feet (10 meters) across. 
+                                The total mass of all the asteroids combined is less than that of Earth's Moon.
+                            </p>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-tag me-2"></i>Products</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-regular fa-clock  me-2"></i>55 Minutes</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-play  me-2"></i>Play</a>
+                        </div>
+                    </div>
+                   
+                    <div class="img col-12 col-md-4">
+                        <img src="images/9.jpg" alt="c1" class="imgcha img-fluid rounded-end end-0 bottom-0 position-absolute" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%); width: 300px; height: 240px;">
+        
+                        </div>
+                </div>
+                
+            </div> <!--end of card sec-->
+            <div class="fc card bg-dark m-5">
+                <div class="row d-flex">
+                    <div class="img col-12 col-md-4">
+                    <img src="images/sss.jpg" alt="c1" class="img-fluid " style="clip-path: ellipse(250px 150px at 10% 20%); ">
+    
+                    </div>
+                    <div class="cont19 col-12 col-md-8">
+                        <div class="card-body text-light">
+                            <h2 class="card-title ">Constellation</h2>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="d-inline-flex">Mon,July 25th 2024</p>   
+                            <div class="line rounded " style="border-top: 2px solid white; width: 100px;"></div> 
+                            <p class="card-text">
+                                it's a group of stars that looks like a particular
+                                 shape in the sky and has been given a name. These stars are far away from Earth. 
+                            </p>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-tag me-2"></i>Products</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-regular fa-clock  me-2"></i>55 Minutes</a>
+                            <a href="#" class="btn btn-hover nav-hover btn-light me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Press me"><i class="fa-solid fa-play  me-2"></i>Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end of card sec-->
+     </section><!--end of sec8-->
+     <section class="sec9"><!--start of sec9 -->
+        <h1 class="hesd9 text-center">Join Us </h1>
+          <div class="cont9 d-flex row justify-content-center justify-content-around mt-3">
+            <div class="c1 rounded bg-white text-center"style="width: 200px; height: 200px;box-shadow: -2px 7px 38px 7px rgba(116,118,120,1);">
+                <p class="text-center fst-italic" style="font-size: 25px;">subscribe now</p>
+                <a href="#" class="icon" title="youtube"><i class="fa-brands fa-youtube "style="font-size: 50px; color:red;"></i></a>
+                <p style="font-size: 25px;">Press me</p>
+            </div>
+            <div class="c1 rounded bg-white text-center"style="width: 200px; height: 200px;box-shadow: -2px 7px 38px 7px rgba(116,118,120,1);">
+                <p class="text-center fst-italic" style="font-size: 25px;">Follow</p>
+               <a href="#" class="iconin" title="instagram" style="font-size: 50px;"> <i class="fa-brands fa-instagram"></i></a>
+                <p style="font-size: 25px;">Press me</p>
+            </div>
+            <div class="c1 rounded bg-white text-center"style="width: 200px; height: 200px;box-shadow: -2px 7px 38px 7px rgba(116,118,120,1);">
+                <p class="text-center fst-italic" style="font-size: 25px;">Follow Us</p>
+                <a href="#" class="icotw" title="twitter" style="font-size: 50px; color: blue;"><i class="fa-brands fa-twitter"></i></a>
+                <p style="font-size: 25px;">Press me</p>
+            </div>
+            <div class="c1 rounded bg-white text-center"style="width: 200px; height: 200px;box-shadow: -2px 7px 38px 7px rgba(116,118,120,1);">
+                <p class="text-center fst-italic" style="font-size: 25px;">Call Us</p>
+                <a href="#" class="icowh" title="whatsapp" style="font-size: 50px; color: green;"><i class="fa-brands fa-whatsapp"></i></a>
+                <p style="font-size: 25px;">Press me</p>
+            </div>
+
+          </div>
+
+     </section><!--end of sec9-->
+     <section >
+        <div class="sec10 bg-secondary" style="width: 100%; ">
+            <div class="line2  position-absolute  " style="border-top: 2px solid white; width: 1200px;"></div> 
+            <div class="cont9 d-flex justify-content-around pt-4">
+                <div class="it ">
+                    <img src="images/it1.jpg" alt="item" class="rounded-circle" width="100px" height="100px">
+                      <p class="d-inline-flex text-light fst-italic">Important galaxy</p>
+
+                </div>
+                <div class="it">
+                    <img src="images/it2.jpg" alt="item" class="rounded-circle"width="100px" height="100px">
+                      <p class="d-inline-flex text-light fst-italic">Important moon</p>
+
+                </div>
+                <div class="it ">
+                    <img src="images/it3.jpg" alt="item" class="rounded-circle" width="100px" height="100px">
+                      <p class="d-inline-flex text-light fst-italic">Important star </p>
+
+                </div>
+            </div>
+            <div class="line2  position-absolute  " style="border-top: 2px solid white; width: 1200px;"></div> 
+            <div class="cont92 d-flex justify-content-around pt-4 text-center">
+                <div class="t1" style="width: 200px; height: 200px;">
+                    <p>tel: 011145682973</p>
+                    <p>Adress:Egypt</p>
+                    <p>Fax:1204568746</p>
+                </div>
+                <div class="t2" style="width: 200px; height:200px;">
+                    <a href="#" class="d-block" style="text-decoration: none;">Visit Us</a>
+                    <a href="#" class="d-block" style="text-decoration: none;">Take alook</a>
+                    <a href="#" class="d-block" style="text-decoration: none;">Your version is important </a>
+
+                </div>
+                <div class="t1" style="width: 200px; height: 200px;">
+                    <p>Services for all</p>
+                    <p>Provide best services</p>
+                    <p>You will be better</p>
+                </div>
+
+            </div>
+            <div class="line3 position-absolute mb-5 " style="border-top: 2px solid white; width: 1200px;"></div> 
+               <p class="text-center" style="font-size: 25px;">COPYRIGHT@2023 MARWA_AHMED ALLRIGHTS</p>
+        </div>
+        
+
+     </section>
+    <script src="js/script.js"></script>
+    </body>
+</html>
